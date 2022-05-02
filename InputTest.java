@@ -212,8 +212,14 @@ else
      //另
      int[] Zero=new elementType[0];   //创建长度为0的数组
  */
-                   /**研究命令行参数*/
-
+                      /**研究命令行参数*/
+    if (args.length==0 || args[0].equals("-h"))
+        System.out.print("Hello,");
+    else if (args[0].equals("-g"))
+        System.out.print("Goodbye,");
+    for (int i=1;i< args.length;i++)
+        System.out.print(" "+args[i]);
+    System.out.println("!");
     }
 }
 
